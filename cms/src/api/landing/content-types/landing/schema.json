@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "landings",
+  "info": {
+    "singularName": "landing",
+    "pluralName": "landings",
+    "displayName": "Landing",
+    "description": "Contenido de la página principal"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "heroTitle": { "type": "string", "required": true },
+    "heroSubtitle": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "ctaUrl": { "type": "string" },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "aboutTitle": { "type": "string" },
+    "aboutBody": { "type": "richtext" },
+    "seoTitle": { "type": "string" },
+    "seoDescription": { "type": "text" }
+  }
+}

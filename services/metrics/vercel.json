@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/collect", "destination": "/api/collect" },
+    { "source": "/stats", "destination": "/api/stats" }
+  ],
+  "headers": [
+    {
+      "source": "/track.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    }
+  ]
+}
